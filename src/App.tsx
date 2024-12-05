@@ -3,11 +3,13 @@ import Hero from './components/Hero';
 import Projects from './sections/Projects';
 import ContactForm from './sections/Contact';
 import { ThemeProvider } from './context/ThemeContext';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   return (
     <ThemeProvider>
       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+        <SpeedInsights />
         <Navbar />
         <section id="about">
         <Hero />

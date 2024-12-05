@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import Projects from './sections/Projects';
 import ContactForm from './sections/Contact';
 import { ThemeProvider } from './context/ThemeContext';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
   return (

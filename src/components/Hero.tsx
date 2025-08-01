@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 const roles = [
-  { text: "Blockchain Developer", gradient: "from-purple-600 to-blue-500" },
+  { text: "Cyber Security Enthusiast", gradient: "from-purple-600 to-blue-500" },
   { text: "Full Stack Developer", gradient: "from-blue-500 to-green-500" },
   { text: "Technical Researcher", gradient: "from-green-500 to-purple-600" }
 ];
@@ -28,8 +28,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
+              <h1 className="text-4xl sm:text-5xl lg:text-4xl font-bold text-gray-900 dark:text-white">
                 I am a
               </h1>
               <div className="h-24 my-4">
@@ -47,7 +46,7 @@ export default function Hero() {
                 </AnimatePresence>
               </div>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-xl">
-                Passionate about building decentralized applications and creating innovative blockchain solutions.
+              To leverage my skills in Full Stack Development and Cybersecurity to build secure, scalable, and user-centric applications. Passionate about developing robust software solutions while proactively mitigating security risks. Seeking a dynamic role that integrates innovative development with strong security practices to protect digital assets and enhance user trust.
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 {/* <motion.button
@@ -62,13 +61,20 @@ export default function Hero() {
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 border-2 border-purple-600 dark:border-purple-400 text-purple-600 dark:text-purple-400 rounded-full font-semibold text-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-all duration-200"
                 >
-                  work with me
+                  Work With Me
                 </motion.button>
               </div>
             </motion.div>
           </div>
 
+          {/* <div>
+            <h1>
+
+            </h1>
+          </div> */}
+
           {/* Right Content - Profile Image */}
+          
           <div className="flex-1 flex justify-center lg:justify-end">
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
@@ -78,9 +84,9 @@ export default function Hero() {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full animate-pulse"></div>
               <img
-                src=""
+                src="/textures/Amit1.jpg"
                 alt="Profile"
-                className="absolute inset-2 rounded-full object-cover shadow-2xl"
+                className="absolute inset-0 rounded-full object-cover shadow-2xl"
               />
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-500/20 blur-xl"></div>
             </motion.div>

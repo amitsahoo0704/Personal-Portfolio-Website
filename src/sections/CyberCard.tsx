@@ -23,11 +23,11 @@ const generateExpiryDate = () => {
 };
 
 const defaultData: CardData = {
-  name: "SUMAN YADAV",
-  dob: "2003-12-22",
-  walletAddress: "0xF2A754331E29E201E66ff7A293D53dE6360Ebc4F",
+  name: "Amit Sahoo",
+  dob: "2004-04-07",
+  walletAddress: "0xc39387F94a3497DDa382E2F47cF5f726D24E4F99",
   address: "CHITKARA UNIVERSITY, CHANDIGARH",
-  photoUrl: "/textures/Aizen.jpeg",
+  photoUrl: "/textures/amit.jpg",
   status: "ACTIVE",
   expiryDate: generateExpiryDate()
 };
@@ -236,7 +236,7 @@ const CyberCard = () => {
         shadow-[0_0_15px_rgba(0,255,0,0.5)] hover:shadow-[0_0_25px_rgba(0,255,0,0.8)]
         transition-all duration-300 ${showCard ? 'opacity-0' : 'opacity-100'}`}
       >
-        Who am I?
+        Amit Sahoo
       </button>
 
       {showForm && <CardForm />}
@@ -264,7 +264,7 @@ const CyberCard = () => {
                     <p>DOB: {format(new Date(cardData.dob), 'yyyy.MM.dd')}</p>
                     <p>ADDRESS: {cardData.address}</p>
                     <p>STATUS: {cardData.status}</p>
-                    <p>EXPIRES: {cardData.expiryDate}</p>
+                    <p>CARD-VALIDIY: {cardData.expiryDate}</p>
                   </div>
                 </div>
               </div>

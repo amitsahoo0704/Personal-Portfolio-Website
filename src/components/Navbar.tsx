@@ -20,10 +20,10 @@ export default function Navbar() {
   }, []);
 
   const handleDownload = () => {
-    const pdfUrl = '/textures/neetu.pdf'
+    const pdfUrl = '/textures/CVAmit.pdf'
     const link = document.createElement('a')
     link.href = pdfUrl
-    link.download = 'suman-yadav.pdf'  // Changed the download filename here
+    link.download = 'amitsahoo.pdf'  // Changed the download filename here
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -51,7 +51,7 @@ export default function Navbar() {
                     : 'text-black hover:bg-gray-200'
                 }`}
               >
-              download cv
+              Download CV
             </button>
           </motion.div>
           ) : (
